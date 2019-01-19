@@ -1,8 +1,10 @@
 package programmers.q12910;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -33,3 +35,10 @@ class Solution {
         return list.stream().mapToInt(e -> e).toArray();
     }
 }
+
+// 다른 사람의 풀이
+//class Solution {
+//    public int[] solution(int[] arr, int divisor) {
+//        return Arrays.stream(arr).filter(e -> e % divisor == 0).sorted().toArray();
+//    }
+//}
