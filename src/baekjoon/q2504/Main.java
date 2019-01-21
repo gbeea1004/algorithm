@@ -4,6 +4,9 @@ import java.io.*;
 import java.util.Stack;
 
 public class Main {
+    // 다시 풀어보기
+    // 에러 : 런타임 에러 (][()]
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
