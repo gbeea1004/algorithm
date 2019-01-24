@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daa170a-a436-428e-8f79-3c88e1dd4a2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codeforce/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeforce/q20190123/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeforce/q20190123/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/codeforce/Main.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codeforce/q20190123/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="144">
+              <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,11 +27,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-523">
-              <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+            <state relative-caret-position="424">
+              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,13 +75,15 @@
         <option value="$PROJECT_DIR$/src/baekjoon/q15552/Main.java" />
         <option value="$PROJECT_DIR$/src/baekjoon/q1427/Main.java" />
         <option value="$PROJECT_DIR$/src/codeforce/Main.java" />
+        <option value="$PROJECT_DIR$/src/codeforce/q20190123/Main.java" />
+        <option value="$PROJECT_DIR$/src/template/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="436" />
-    <option name="y" value="26" />
-    <option name="width" value="1488" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="180" />
+    <option name="y" value="42" />
+    <option name="width" value="1331" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -109,16 +122,23 @@
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="q20190123" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="programmers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548258683876" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548332439884" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -187,11 +207,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Main" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.q20190123.Main" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.q20190123.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,10 +252,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="436" y="26" width="1488" height="1026" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1783115" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30818966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -456,17 +476,35 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-523">
+        <state relative-caret-position="12480">
           <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/codeforce/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/codeforce/q20190123/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
           </folding>
         </state>
       </provider>
