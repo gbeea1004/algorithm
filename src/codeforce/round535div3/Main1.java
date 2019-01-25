@@ -1,9 +1,9 @@
-package codeforce.q20190123;
+package codeforce.round535div3;
 
 import java.io.*;
 import java.util.Arrays;
 
-public class Main {
+public class Main1 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
