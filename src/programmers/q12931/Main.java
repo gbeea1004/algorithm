@@ -10,11 +10,18 @@ public class Main {
 
 class Solution {
     public int solution(int n) {
+//        int answer = 0;
+//        String[] input = String.valueOf(n).split("");
+//        for (String s : input) {
+//            answer += Integer.parseInt(s);
+//        }
+//        return answer;
+
         int answer = 0;
-        String[] input = String.valueOf(n).split("");
-        for (String s : input) {
-            answer += Integer.parseInt(s);
+        while (n > 0) {
+            answer += n % 10;
+            n /= 10;
         }
-        return answer;
+        return  answer;
     }
 }
