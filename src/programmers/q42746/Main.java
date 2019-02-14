@@ -1,9 +1,6 @@
 package programmers.q42746;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,36 +37,5 @@ class Solution {
             }
         }
         return sb.toString();
-    }
-}
-
-class QuickSort {
-    public static void sort(int[] data, int l, int r) {
-        int left = l;
-        int right = r;
-        int pivot = data[(l + r) / 2]; // 기준 점
-
-        do {
-            while (data[left] > pivot) {
-                left++;
-            }
-            while (data[right] < pivot) {
-                right--;
-            }
-            if (left <= right) {
-                int temp = data[left];
-                data[left] = data[right];
-                data[right] = temp;
-                left++;
-                right--;
-            }
-        } while (left <= right);
-
-        if (l < right) {
-            sort(data, l, right);
-        }
-        if (r > left) {
-            sort(data, left, r);
-        }
     }
 }
