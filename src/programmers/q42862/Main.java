@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int n = 5;
-        int[] lost = {2, 5};
-        int[] reserve = {5};
+        int[] lost = {2, 3, 4};
+        int[] reserve = {3, 4, 5};
         System.out.println(solution.solution(n, lost, reserve));
     }
 }
