@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8daa170a-a436-428e-8f79-3c88e1dd4a2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baekjoon/q2739/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kakao/SecretMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coding_test/kakao/SecretMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kakao/intern/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coding_test/kakao/intern/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kakao/intern/Main4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coding_test/kakao/intern/Main4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kakao/intern/q1/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coding_test/kakao/intern/q1/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kakao/intern/q3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coding_test/kakao/intern/q3/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-551">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/baekjoon/q2739/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -75,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/baekjoon/q15552/Main.java" />
         <option value="$PROJECT_DIR$/src/codeforce/Main.java" />
         <option value="$PROJECT_DIR$/src/codeforce/q20190123/Main.java" />
         <option value="$PROJECT_DIR$/src/template/Main.java" />
@@ -126,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q2/Main.java" />
         <option value="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q1/Main.java" />
         <option value="$PROJECT_DIR$/src/coding_test/programmers_jobmore_2019_02_23/q3/Main.java" />
+        <option value="$PROJECT_DIR$/src/baekjoon/q2739/Main.java" />
       </list>
     </option>
   </component>
@@ -176,64 +178,6 @@
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q1" type="462c0819:PsiDirectoryNode" />
-              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q2" type="462c0819:PsiDirectoryNode" />
-              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="coding_test" type="462c0819:PsiDirectoryNode" />
-              <item name="programmers_jobmore_2019_02_23" type="462c0819:PsiDirectoryNode" />
-              <item name="q3" type="462c0819:PsiDirectoryNode" />
-              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="programmers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550899774798" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550900784865" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -274,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.q2440.Main" />
       <module name="algorithm" />
@@ -314,6 +258,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.q2739.Main" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.q2739.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coding_test.programmers_jobmore_2019_02_23.q2.Main" />
       <module name="algorithm" />
@@ -327,33 +284,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programmers.q12899.Main" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programmers.q12899.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (5)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +327,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987245" visible="true" weight="0.21668473" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987245" weight="0.21668473" />
       <window_info id="Structure" order="1" sideWeight="0.50127554" side_tool="true" weight="0.29166666" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -395,7 +339,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.49642006" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.5918885" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.59188545" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32990867" />
       <window_info anchor="bottom" x="37" y="210" width="1846" height="619" id="Terminal" order="7" sideWeight="0.2631579" weight="0.7377892" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.7368421" side_tool="true" weight="0.74680305" />
@@ -445,13 +389,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/programmers/q12950/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/baekjoon/q1427/a.java" />
     <entry file="file://$PROJECT_DIR$/src/baekjoon/q2504/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -768,6 +705,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-551">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/baekjoon/q2739/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>
