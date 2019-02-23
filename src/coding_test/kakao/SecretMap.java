@@ -1,4 +1,4 @@
-package kakao;
+package coding_test.kakao;
 
 public class SecretMap {
     // 비밀 지도 (난이도 : 하)

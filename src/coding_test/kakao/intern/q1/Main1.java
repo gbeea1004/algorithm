@@ -1,4 +1,4 @@
-package kakao.intern.q1;
+package coding_test.kakao.intern.q1;
 
 public class Main1 {
     public static void main(String[] args) {

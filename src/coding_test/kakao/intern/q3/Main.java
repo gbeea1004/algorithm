@@ -1,4 +1,4 @@
-package kakao.intern.q3;
+package coding_test.kakao.intern.q3;
 
 import java.util.*;
 
