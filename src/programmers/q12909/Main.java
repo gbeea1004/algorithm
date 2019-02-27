@@ -1,32 +1,32 @@
 package programmers.q12909;
 
-import java.util.EmptyStackException;
-import java.util.Stack;
-
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(")()("));
+        System.out.println(solution.solution("()"));
     }
 }
 
 class Solution {
     boolean solution(String s) {
-        Stack stack = new Stack();
-        try {
-            for (int i = 0; i < s.length(); i++) {
-                char current = s.charAt(i);
-                if (current == '(') {
-                    stack.push(current);
-                } else if (current == ')') {
-                    stack.pop();
-                }
-            }
-        } catch (EmptyStackException e) {
+        if (s.charAt(0) == ')') {
             return false;
         }
 
-        if (stack.empty()) {
+        int result = 0;
+        for (int i = 0; i < s.length(); i++) {
+
+            if (result < 0) {
+                return false;
+            }
+            char current = s.charAt(i);
+            if (current == '(') {
+                result++;
+            } else if (current == ')') {
+                result--;
+            }
+        }
+        if (result == 0) {
             return true;
         } else {
             return false;
