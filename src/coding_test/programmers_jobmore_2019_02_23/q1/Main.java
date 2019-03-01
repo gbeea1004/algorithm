@@ -16,6 +16,7 @@ class Solution {
     public int solution(int n) {
         int answer = 0;
         makeSosu(n);
+        System.out.println(sosus);
         int a;
         int b;
         int c;
@@ -38,7 +39,7 @@ class Solution {
     private void makeSosu(int n) {
         for (int i = 2; i <= n; i++) {
             boolean sosu = true;
-            for (int j = 2; j * j<= i ; j++) {
+            for (int j = 2; j * j <= i; j++) {
                 if (i % j == 0) {
                     sosu = false;
                     break;
