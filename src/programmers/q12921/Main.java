@@ -1,8 +1,5 @@
 package programmers.q12921;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
@@ -13,23 +10,19 @@ public class Main {
 
 class Solution {
     public int solution(int n) {
-        List<Boolean> prime = new ArrayList<>();
-
-        prime.add(false); // 0
-        prime.add(false); // 1
-
+        int answer = 0;
         for (int i = 2; i <= n; i++) {
-            prime.add(i, true);
-        }
-
-        for (int i = 2; (i * i) <= n; i++) {
-            if (prime.get(i)) {
-                for (int j = i * i; j <= n; j += i) {
-                    prime.set(j, false);
+            boolean sosu = true;
+            for (int j = 2; j * j <= i; j++) {
+                if (i % j == 0) {
+                    sosu = false;
+                    break;
                 }
             }
+            if (sosu) {
+                answer++;
+            }
         }
-
-        return (int)prime.stream().filter(e -> e.booleanValue()).count();
+        return answer;
     }
 }
