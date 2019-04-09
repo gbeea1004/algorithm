@@ -1,5 +1,9 @@
 package programmers.q12913;
 
+/*
+* 풀이법 : 별도의 배열을 만들면 테스트에서 실패하게 된다.
+*         기존 배열을 활용하라.
+* */
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
@@ -11,40 +15,19 @@ public class Main {
 
 class Solution {
     int solution(int[][] land) {
-        int[] copyLand = new int[land[0].length];
-        int[] limitIndex = new int[land[0].length];
+        for (int i = 0; i < land.length - 1; i++) {
+            land[i + 1][0] += Math.max(land[i][1], Math.max(land[i][2], land[i][3]));
+            land[i + 1][1] += Math.max(land[i][0], Math.max(land[i][2], land[i][3]));
+            land[i + 1][2] += Math.max(land[i][0], Math.max(land[i][1], land[i][3]));
+            land[i + 1][3] += Math.max(land[i][0], Math.max(land[i][1], land[i][2]));
+        }
 
+        int max = land[land.length - 1][0];
         for (int i = 0; i < land[0].length; i++) {
-            copyLand[i] = land[0][i];
-            limitIndex[i] = i;
-        }
-
-        for (int i = 1; i < land.length; i++) {
-            for (int j = 0; j < land[0].length; j++) {
-                int max = -1;
-                int limit = -1;
-                for (int k = 0; k < land[0].length; k++) {
-                    if (limitIndex[j] == k) {
-                        continue;
-                    }
-                    if (max < land[i][k]) {
-                        max = land[i][k];
-                        limit = k;
-                    }
-                }
-                limitIndex[j] = limit;
-                copyLand[j] += max;
+            if (max < land[land.length - 1][i]) {
+                max = land[land.length - 1][i];
             }
         }
-
-        int answer = 0;
-        for (int i : copyLand) {
-            System.out.println(i);
-            if (answer < i) {
-                answer = i;
-            }
-        }
-
-        return answer;
+        return max;
     }
 }
