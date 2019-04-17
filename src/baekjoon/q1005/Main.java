@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+/*
+* [위상정렬]이용
+* 같은 위상에 있는 노드들을 기준으로 정렬
+* */
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
