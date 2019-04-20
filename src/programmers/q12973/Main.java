@@ -14,17 +14,16 @@ class Solution {
     private final int FAIL = 0;
 
     public int solution(String s) {
-        String[] text = s.split("");
         Stack stack = new Stack();
-        stack.push(text[0]);
-        for (int i = 1; i < text.length; i++) {
+        stack.push(s.charAt(0));
+        for (int i = 1; i < s.length(); i++) {
             if (!stack.empty()) {
-                if (stack.peek().equals(text[i])) {
+                if (stack.peek().equals(s.charAt(i))) {
                     stack.pop();
                     continue;
                 }
             }
-            stack.push(text[i]);
+            stack.push(s.charAt(i));
         }
 
         if (stack.empty()) {
