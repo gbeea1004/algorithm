@@ -4,7 +4,7 @@ package programmers.q12930;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "A v    a";
+        String s = "A v    base";
         System.out.println(solution.solution(s));
     }
 }

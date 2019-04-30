@@ -6,8 +6,8 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String[] participant = {"a", "a", "b"};
-        String[] completion = {"a"};
+        String[] participant = {"base", "base", "b"};
+        String[] completion = {"base"};
         System.out.println(solution.solution(participant, completion));
     }
 }

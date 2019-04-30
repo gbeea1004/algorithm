@@ -3,8 +3,8 @@ package baekjoon.q2178;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class MainTest {
     private Solution solution;
@@ -22,6 +22,7 @@ public class MainTest {
                 {1, 0, 1, 0, 1, 1},
                 {1, 1, 1, 0, 1, 1}
         };
+
         assertThat(solution.solution(maze), is(15));
     }
 
@@ -48,13 +49,13 @@ public class MainTest {
     @Test
     public void testCase_4() {
         int[][] maze = {
-                {1,0,1,1,1,1,1},
-                {1,1,1,0,0,0,1},
-                {1,0,0,0,0,0,1},
-                {1,0,0,0,0,0,1},
-                {1,0,0,0,0,0,1},
-                {1,0,0,0,0,0,1},
-                {1,1,1,1,1,1,1}
+                {1, 0, 1, 1, 1, 1, 1},
+                {1, 1, 1, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 1},
+                {1, 1, 1, 1, 1, 1, 1}
         };
         assertThat(solution.solution(maze), is(13));
     }

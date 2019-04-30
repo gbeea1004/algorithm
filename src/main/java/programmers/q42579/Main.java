@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
         String[] genres = {"classic", "pop", "classic", "pop", "classic", "classic"};
-//        String[] genres = {"a", "b", "c", "d", "a"};
+//        String[] genres = {"base", "b", "c", "d", "base"};
 //        int[] plays = {500, 600, 150, 800, 2500};
         int[] plays = {400, 600, 150, 2500, 500, 500};
         System.out.println(Arrays.toString(solution.solution(genres, plays)));
