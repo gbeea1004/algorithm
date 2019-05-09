@@ -29,6 +29,9 @@ public class Solution {
                         result++;
                         break;
                     }
+                    if (sum > no) {
+                        break;
+                    }
                 }
 
                 if (isEnd) {
