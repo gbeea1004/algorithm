@@ -1,0 +1,55 @@
+package coding_test.groundx.q1_201902;
+
+import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class SolutionTest {
+    @Test
+    public void testCase_1() {
+        Solution solution = new Solution();
+        int[] open = {3, 5, 7};
+        int[] close = {4, 10, 12};
+        assertThat(solution.solution(open, close)).isEqualTo(6);
+    }
+
+    @Test
+    public void testCase_2() {
+        Solution solution = new Solution();
+        int[] open = {4, 7, 9, 16};
+        int[] close = {2, 5, 12, 14, 20};
+        assertThat(solution.solution(open, close)).isEqualTo(10);
+    }
+
+    @Test
+    public void testCase_3() {
+        Solution solution = new Solution();
+        int[] open = {1, 2, 3};
+        int[] close = {4, 5, 6, 7, 20};
+        assertThat(solution.solution(open, close)).isEqualTo(3);
+    }
+
+    @Test
+    public void testCase_4() {
+        Solution solution = new Solution();
+        int[] open = {2, 3, 4, 5, 6, 8, 9, 10, 11};
+        int[] close = {7, 12};
+        assertThat(solution.solution(open, close)).isEqualTo(9);
+    }
+
+    @Test
+    public void testCase_5() {
+        Solution solution = new Solution();
+        int[] open = {2, 3, 4, 5, 6, 8, 9, 10, 11};
+        int[] close = {12};
+        assertThat(solution.solution(open, close)).isEqualTo(10);
+    }
+
+    @Test
+    public void testCase_6() {
+        Solution solution = new Solution();
+        int[] open = {2};
+        int[] close = {1, 4, 5, 6, 7, 8, 9, 10};
+        assertThat(solution.solution(open, close)).isEqualTo(2);
+    }
+}
