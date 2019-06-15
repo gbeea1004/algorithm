@@ -22,7 +22,6 @@ public class Main {
             }
             count++;
         }
-
         bw.write(String.valueOf(count));
         bw.flush();
     }
