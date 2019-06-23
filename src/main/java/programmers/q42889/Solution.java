@@ -12,6 +12,10 @@ public class Solution {
             int finalI = i;
             long countOfNoClearPlayer = Arrays.stream(stages).filter(e -> e == finalI).count();
             double countOfReachedStagePlayer = Arrays.stream(stages).filter(e -> e >= finalI).count();
+            if (countOfReachedStagePlayer == 0) {
+                stage.put(i, 0.0);
+                continue;
+            }
             stage.put(i, countOfNoClearPlayer / countOfReachedStagePlayer);
         }
 
