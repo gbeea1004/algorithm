@@ -23,4 +23,9 @@ public class SolutionTest {
     public void testCase_2() {
         assertThat(solution.solution(4, new int[]{4, 4, 4, 4, 4})).isEqualTo(new int[]{4, 1, 2, 3});
     }
+
+    @Test
+    public void testCase_3() {
+        assertThat(solution.solution(2, new int[]{3, 3, 3, 1})).isEqualTo(new int[]{1, 2});
+    }
 }
