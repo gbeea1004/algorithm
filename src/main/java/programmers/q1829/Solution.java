@@ -11,7 +11,7 @@ public class Solution {
         answer[1] = maxSizeOfOneArea;
 
         boolean[][] visit = new boolean[m][n];
-        
+
         return answer;
     }
 }
