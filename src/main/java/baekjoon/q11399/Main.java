@@ -14,9 +14,10 @@ public class Main {
 
 class Solution {
     public int solution(int[] times) {
-        int result = 0;
-
-        System.out.println(Arrays.toString(times));
-        return result;
+        Arrays.sort(times);
+        for (int i = 1; i < times.length; i++) {
+            times[i] += times[i - 1];
+        }
+        return Arrays.stream(times).sum();
     }
 }
