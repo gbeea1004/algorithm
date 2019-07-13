@@ -6,7 +6,7 @@ public class Solution {
         int start = 0;
         for (int i = 0; i < number.length() - k; i++) {
             char max = '0';
-            for (int j = start; j < number.length() - k + i; j++) {
+            for (int j = start; j <= k + i; j++) {
                 if (max < number.charAt(j)) {
                     max = number.charAt(j);
                     start = j + 1;
