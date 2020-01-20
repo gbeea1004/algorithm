@@ -5,13 +5,16 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class Solution {
-
     public String solution(String p) {
         if (p.isEmpty()) return p;
         String[] divisionText = division(p); // divisionText[0] = u, divisionText[1] = v
         if (isCorrect(divisionText[0])) {
             return divisionText[0] + solution(divisionText[1]);
         }
+        return makeNotCorrectCaseText(divisionText);
+    }
+
+    private String makeNotCorrectCaseText(String[] divisionText) {
         StringBuilder sb = new StringBuilder();
         sb.append("(");
         sb.append(solution(divisionText[1]));
