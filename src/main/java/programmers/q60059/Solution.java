@@ -3,11 +3,15 @@ package programmers.q60059;
 public class Solution {
     private int[][] key;
     private int[][] lock;
+    private int centerStartIndex;
+    private int centerEndIndex;
 
     public boolean solution(int[][] key, int[][] lock) {
         final int rotateCount = 4;
         this.key = key;
         this.lock = lock;
+        centerStartIndex = key.length - 1;
+        centerEndIndex = centerStartIndex + lock.length;
 
         int[][] copyLock = createExpandedLock(); // 확장 Lock 생성
 
@@ -36,7 +40,7 @@ public class Solution {
             }
 
             // 회전
-            rotateKey();
+            this.key = rotateKey(key);
         }
         return false;
     }
@@ -47,9 +51,6 @@ public class Solution {
     }
 
     private int[][] insertLockToCenter(int[][] copyLock) {
-        int centerStartIndex = key.length - 1;
-        int centerEndIndex = centerStartIndex + 3;
-
         int x = 0;
         int y;
         for (int i = centerStartIndex; i < centerEndIndex; i++) {
@@ -59,14 +60,10 @@ public class Solution {
             }
             x++;
         }
-
         return copyLock;
     }
 
     private boolean isFitKeyToLock(int[][] copyLock) {
-        int centerStartIndex = key.length - 1;
-        int centerEndIndex = centerStartIndex + 3;
-
         for (int i = centerStartIndex; i < centerEndIndex; i++) {
             for (int j = centerStartIndex; j < centerEndIndex; j++) {
                 if (copyLock[i][j] != 1) return false;
@@ -75,7 +72,7 @@ public class Solution {
         return true;
     }
 
-    private void rotateKey() {
+    public int[][] rotateKey(int[][] key) {
         int keySize = key.length;
         int[][] copyKey = new int[keySize][keySize];
 
@@ -88,7 +85,6 @@ public class Solution {
         for (int i = 0; i < copyKey.length; i++) {
             key[i] = copyKey[i].clone();
         }
-
-//        this.key = copyKey; 아놔,, 이것때문에 하루종일 걸렸네 (TODO : 얕은복사 / 깊은복사 공부하기)
+        return key;
     }
 }
