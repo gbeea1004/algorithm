@@ -1,4 +1,4 @@
-package codesignal.intro3;
+package codesignal.intro03;
 
 public class Main {
     boolean checkPalindrome(String inputString) {

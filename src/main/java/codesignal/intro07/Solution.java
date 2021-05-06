@@ -1,4 +1,4 @@
-package codesignal.intro7;
+package codesignal.intro07;
 
 import java.util.ArrayList;
 import java.util.List;

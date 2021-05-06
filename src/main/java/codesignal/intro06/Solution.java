@@ -1,4 +1,4 @@
-package codesignal.intro6;
+package codesignal.intro06;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package codesignal.intro9;
+package codesignal.intro09;
 
 import java.util.ArrayList;
 import java.util.List;

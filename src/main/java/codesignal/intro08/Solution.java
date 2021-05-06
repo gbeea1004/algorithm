@@ -1,4 +1,4 @@
-package codesignal.intro8;
+package codesignal.intro08;
 
 import java.util.Arrays;
 
