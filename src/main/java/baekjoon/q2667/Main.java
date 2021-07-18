@@ -1,76 +1,94 @@
 package baekjoon.q2667;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Stream;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = Integer.parseInt(scanner.nextLine());
+        int[][] map = new int[N][N];
 
-        int count = Integer.parseInt(br.readLine());
-        int[][] map = new int[count][count];
-
-        for (int[] houses : map) {
-            int[] no = Stream.of(br.readLine().split("")).mapToInt(Integer::parseInt).toArray();
-            for (int i = 0; i < count; i++) {
-                houses[i] = no[i];
-            }
+        for (int i = 0; i < N; i++) {
+            map[i] = Arrays.stream(scanner.nextLine().split(""))
+                           .mapToInt(Integer::parseInt).toArray();
         }
 
-        Solution solution = new Solution();
-        List<Integer> result = solution.solution(count, map);
-        bw.write(String.valueOf(result.size()));
-        bw.newLine();
-
-        for (Integer integer : result) {
-            bw.write(String.valueOf(integer));
-            bw.newLine();
-        }
-        bw.flush();
+        new Solution().solution(map);
     }
 }
 
 class Solution {
-    private final int[] DX = {-1, 1, 0, 0};
-    private final int[] DY = {0, 0, -1, 1};
-    private boolean[][] visit;
-    private int cnt;
+    private static final int[] X_DIR = {-1, 1, 0, 0}; // 상하좌우
+    private static final int[] Y_DIR = {0, 0, -1, 1};
+    private int[][] map;
 
-    public List<Integer> solution(int count, int[][] map) {
+    public void solution(int[][] map) {
+        this.map = map;
         List<Integer> result = new ArrayList<>();
-        visit = new boolean[count][count];
 
-        for (int i = 0; i < count; i++) {
-            for (int j = 0; j < count; j++) {
-                if (map[i][j] == 1 && !visit[i][j]) {
-                    cnt = 1;
-                    dfs(i, j, map);
-                    result.add(cnt);
+        for (int i = 0; i < map.length; i++) {
+            for (int j = 0; j < map[0].length; j++) {
+                if (map[i][j] == 1) {
+                    result.add(bfs(i, j));
                 }
             }
         }
         Collections.sort(result);
-        return result;
+
+        System.out.println(result.size());
+        for (Integer number : result) {
+            System.out.println(number);
+        }
     }
 
-    private void dfs(int x, int y, int[][] map) {
-        visit[x][y] = true; // 방문함
+    public int bfs(int x, int y) {
+        Queue<Point> queue = new LinkedList<>();
+        queue.add(new Point(x, y));
+        map[x][y] = 4; // 방문함
 
-        // 위, 아래, 왼, 오 체크
-        for (int i = 0; i < 4; i++) {
-            int nx = x + DX[i];
-            int ny = y + DY[i];
+        int count = 1;
 
-            if (nx >= 0 && ny >= 0 && nx < visit.length && ny < visit.length) { // 범위 안에 있는가
-                if (map[nx][ny] == 1 && !visit[nx][ny]) {
-                    dfs(nx, ny, map);
-                    cnt++;
+        while (!queue.isEmpty()) {
+            Point point = queue.poll();
+
+            for (int i = 0; i < 4; i++) {
+                int nextX = point.getX() + X_DIR[i];
+                int nextY = point.getY() + Y_DIR[i];
+
+                // 경계값 체크
+                if (nextX < 0 || nextY < 0 || nextX >= map.length || nextY >= map[0].length) {
+                    continue;
+                }
+
+                if (map[nextX][nextY] == 4) {
+                    continue;
+                }
+
+                if (map[nextX][nextY] == 1) {
+                    count++;
+                    queue.add(new Point(nextX, nextY));
+                    map[nextX][nextY] = 4; // 방문함
                 }
             }
         }
+        return count;
+    }
+}
+
+class Point {
+    private int x;
+    private int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }
