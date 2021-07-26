@@ -1,10 +1,10 @@
 package coding_test.y2019.line_dev_intern.q4;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
     public void testCase_1() {
         assertThat(Solution.solution(new int[]{1, 0, 1, 0, 0, 0, 1})).isEqualTo(2);

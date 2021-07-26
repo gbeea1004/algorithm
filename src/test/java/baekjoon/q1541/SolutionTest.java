@@ -1,11 +1,11 @@
 package baekjoon.q1541;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
     public void textCase1() {
         assertThat(Solution.solution("1+1+1-1")).isEqualTo(2);

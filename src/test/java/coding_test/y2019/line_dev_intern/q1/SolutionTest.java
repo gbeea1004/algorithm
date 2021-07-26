@@ -1,6 +1,6 @@
 package coding_test.y2019.line_dev_intern.q1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -9,7 +9,7 @@ import java.util.Queue;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+class SolutionTest {
 
     @Test
     public void testCase_1() {

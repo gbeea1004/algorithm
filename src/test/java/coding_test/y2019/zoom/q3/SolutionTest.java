@@ -1,14 +1,14 @@
 package coding_test.y2019.zoom.q3;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+class SolutionTest {
     private Solution solution;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         solution = new Solution();
     }

@@ -1,10 +1,10 @@
 package baekjoon.q2163;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
     public void testCase_1() {
         assertThat(Solution.solution(2, 2)).isEqualTo(3);
