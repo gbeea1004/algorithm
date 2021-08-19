@@ -27,4 +27,9 @@ class SolutionTest {
     void testCase_3() {
         assertThat(solution.solution(new int[][]{{70, 49, 90}, {68, 50, 38}, {73, 31, 100}})).isEqualTo("CFD");
     }
+
+    @Test
+    void testCase_4() {
+        assertThat(solution.solution(new int[][]{{50, 50, 50, 50}, {50, 50, 50, 50}, {40, 40, 40, 40}, {40, 40, 40, 40}})).isEqualTo("FFFF");
+    }
 }
