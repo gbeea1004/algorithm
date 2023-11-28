@@ -1,7 +1,6 @@
 package programmers.q12951;
 
 public class Solution {
-
   public String solution(String s) {
     String answer = "";
     String[] words = s.toLowerCase().split("");
